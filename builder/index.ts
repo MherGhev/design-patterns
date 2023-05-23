@@ -1,5 +1,5 @@
-import House from "./builder/House";
-import HouseBuilder from "./builder/HouseBuilder";
+import House from "./House";
+import HouseBuilder from "./HouseBuilder";
 
 
 const builder1 = new HouseBuilder();
