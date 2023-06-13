@@ -1,0 +1,1 @@
+export default class HouseBuilderError extends Error { }
