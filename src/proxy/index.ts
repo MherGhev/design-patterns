@@ -1,5 +1,5 @@
 import Printer from "./PrinterClass";
-import PrinterProxy from "./PrinterProyx";
+import PrinterProxy from "./PrinterProxy";
 
 const printer1: Printer = new Printer();
 const printer2: Printer = new Printer();

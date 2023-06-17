@@ -14,7 +14,13 @@ class Plane {
     }
 
     getOtherPlaneLocations = (tower: Tower) => {
-        return tower.locations;
+        const result = new Map<string, PlaneLocation>();
+        tower.locations.forEach((location, id) => {
+            if (id !== this.id) {
+                result.set(id, location)
+            }
+        })
+        return result;
     }
 
     updateLocation = (tower: Tower) => {

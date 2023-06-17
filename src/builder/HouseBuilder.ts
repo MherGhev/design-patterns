@@ -5,7 +5,7 @@ import HouseBuilderError from "./HouseBuilderError";
 class HouseBuilder implements Builder<House>{
     public house: House;
     constructor() {
-        this.house = new House();
+        this.reset();
     }
 
     addWalls = (nOfWalls: number): HouseBuilder => {
@@ -46,8 +46,14 @@ class HouseBuilder implements Builder<House>{
     }
 
     build = (): House => {
-        return this.house;
+        const result = this.house;
+        this.reset();
+        return result;
         // or return new House(this.nOfWalls, this.windows, etc...)
+    }
+
+    reset = (): void => {
+        this.house = new House();
     }
 }
 

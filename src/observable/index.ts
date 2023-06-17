@@ -19,11 +19,11 @@ observable.subscribe(observer3);
 
 setTimeout(() => {
     observable.notify("123456");
-    observable.unsubscribe(observer3);
+    // observable.unsubscribe(observer3);
 }, 1000);
 
 // Question for the audience: why won't this work?
-// observable.unsubscribe(observer3)
+observable.unsubscribe(observer3);
 
 setTimeout(() => {
     observable.notify("789");

@@ -2,7 +2,6 @@ import IPrinter from "./PrinterInterface";
 
 class Printer implements IPrinter {
     public isFree: boolean = true;
-    constructor() { }
 
     print(document: string): Promise<string> {
         return new Promise<string>((resolve, reject) => {
