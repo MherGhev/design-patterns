@@ -6,7 +6,7 @@ class Tower{
     locations: Map<string, PlaneLocation>
 
     constructor() {
-        this.locations = new Map<string, PlaneLocation>
+        this.locations = new Map<string, PlaneLocation>();
     }
 
     getAllLocations = () => {

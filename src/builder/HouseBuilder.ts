@@ -46,8 +46,8 @@ class HouseBuilder implements Builder<House>{
     }
 
     build = (): House => {
-        // reset this.house ?
         return this.house;
+        // or return new House(this.nOfWalls, this.windows, etc...)
     }
 }
 
